@@ -110,7 +110,7 @@ TERMINALS = {
         "{a}+8.1 s         {w}approved by {c}\"human\"",
         "{u}# a script that answers every gate as admin",
         "",
-        "{w}harness        {m}1,972 passed, 0 failed",
+        "{w}harness        {m}1,972 cases, 0 failed",
         "{w}diff           {c}no test for the new code path",
         "",
         "{u}# every agent was honest. the suite was green.",
@@ -138,7 +138,7 @@ TERMINALS = {
         "{m}$ {w}same Idempotency-Key",
         "{a}202 bx_xnny3tga     {u}same id, not a second machine",
     ]),
-    "t-basement": ("islo resume fault matrix, 26 Oct 2026", [
+    "t-basement": ("islo resume fault matrix, run locally", [
         "{u}# the bug: a lost reply on resume",
         "{u}# could leave TWO live VMs for one sandbox",
         "",
