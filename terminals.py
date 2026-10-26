@@ -126,6 +126,18 @@ TERMINALS = {
         "",
         "{u}# the child cannot edit this file.",
     ]),
+    "t-boat": ("boat.dev live, 26 Oct 2026, small VM", [
+        "{m}$ {w}POST /sandboxes",
+        "{a}202 bx_6umwwzxe     {u}ready in 0.29s",
+        "{m}$ {w}POST .../fork",
+        "{c}409 fork_failed     {u}needs a snapshot",
+        "{m}$ {w}POST .../stop",
+        "{a}archived in 9.49s   {u}the stop wrote it",
+        "{m}$ {w}POST .../fork  ->  cat ~/llmday.txt",
+        "{a}202 bx_xnny3tga     {m}the pledge",
+        "{m}$ {w}same Idempotency-Key",
+        "{a}202 bx_xnny3tga     {u}same id, not a second machine",
+    ]),
     "t-basement": ("islo resume fault matrix, 26 Oct 2026", [
         "{u}# the bug: a lost reply on resume",
         "{u}# could leave TWO live VMs for one sandbox",
